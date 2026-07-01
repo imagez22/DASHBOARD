@@ -2,7 +2,7 @@
 
 A responsive organizational dashboard built with plain HTML, CSS, and JavaScript — no frameworks, no build step. It covers a home overview, an events schedule, an upcoming-meetings list, and a change-password flow, with light/dark theming and a collapsible sidebar on mobile.
 
-**[Deploy your own copy to Vercel](https://vercel.com/new/clone?repository-url=https://github.com/imagez22/DASHBOARD)**
+**[Live Demo](https://dashboard-five-omega-57.vercel.app/)** · **[Deploy your own copy to Vercel](https://vercel.com/new/clone?repository-url=https://github.com/imagez22/DASHBOARD)**
 
 ## Features
 
@@ -52,6 +52,8 @@ python3 -m http.server 8080
 ## Deployment
 
 This is a static site, so it deploys to [Vercel](https://vercel.com) with zero configuration — import the repo in the Vercel dashboard, or click the deploy button above.
+
+Live at **https://dashboard-five-omega-57.vercel.app/**
 
 ## License
 
