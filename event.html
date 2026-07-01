@@ -8,20 +8,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="shortcut icon" href="./images/logo.png">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        body{overflow: hidden;}
-        header{position: relative;}
-        .meeting{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            height: 80vh;
-            width: 80%;
-            margin: auto;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -34,11 +20,11 @@
                 <span class="material-icons-sharp">home</span>
                 <h3>Home</h3>
             </a>
-            <a href="event.html" onclick="eventAll()">
+            <a href="event.html" class="active" onclick="eventAll()">
                 <span class="material-icons-sharp">today</span>
                 <h3>Events</h3>
             </a> 
-            <a href="meeting.html" class="active">
+            <a href="meeting.html">
                 <span class="material-icons-sharp">grid_view</span>
                 <h3>Meetings</h3>
             </a>
@@ -46,7 +32,7 @@
                 <span class="material-icons-sharp">password</span>
                 <h3>Change Password</h3>
             </a>
-            <a href="#">
+            <a href="#" onclick="logout()">
                 <span class="material-icons-sharp">logout</span>
                 <h3>Logout</h3>
             </a>
@@ -58,58 +44,32 @@
             <span class="material-icons-sharp active">light_mode</span>
             <span class="material-icons-sharp">dark_mode</span>
         </div>
+        
     </header>
 
-    <main>
-        <div class="meeting event">
-            <h2>Upcoming Meetings</h2>
+    <main style="margin: 0;">
+        <div class="event active" id="event">
+            <div>
+                <span id="prevDay">&lt;</span>
+                <h2>Today's Event</h2>
+                <span id="nextDay">&gt;</span>
+            </div>
             <table>
                 <thead>
                     <tr>
-                        <th>Date</th>
                         <th>Time</th>
-                        <th>Lead</th>
-                        <th>Platform</th>
+                        <th>Room No.</th>
+                        <th>Subject</th>
+                        <th>Type</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>13 May 2025</td>
-                        <td>09-12 AM</td>
-                        <td>Mr. Derrick</td>
-                        <td>Whatsapp</td>
-                    </tr>
-                    <tr>
-                        <td>16 May 2025</td>
-                        <td>09-12 AM</td>
-                        <td>Mr. Kentu</td>
-                        <td>Google Meets</td>
-                    </tr>
-                    <tr>
-                        <td>18 May 2025</td>
-                        <td>09-12 AM</td>
-                        <td>Dr. Madwick</td>
-                        <td>Zoom</td>
-                    </tr>
-                    <tr>
-                        <td>20 May 2022</td>
-                        <td>09-12 AM</td>
-                        <td>Mr. Jickaw</td>
-                        <td>Whatsapp</td>
-                    </tr>
-                    <tr>
-                        <td>23 May 2022</td>
-                        <td>09-12 AM</td>
-                        <td>Mad. Sobley</td>
-                        <td>Google Meets</td>
-                    </tr>
-                </tbody>
+                <tbody></tbody>
             </table>
         </div>
-    </main>
     </main>
 
 </body>
 
+<script src="event.js"></script>
 <script src="app.js"></script>
 </html>
